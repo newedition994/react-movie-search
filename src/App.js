@@ -1,22 +1,29 @@
 import React from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p></p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <table
+        style={{
+          backgroundColor: "#000",
+          display: "block",
+          color: "#fff",
+          paddingLeft: 16
+        }}
+      >
+        <tbody>
+          <tr>
+            <td>
+              <img width="50" src="green_app_icon.svg" />
+            </td>
+            <td>
+              <h1>MoviesDB Search</h1>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }
