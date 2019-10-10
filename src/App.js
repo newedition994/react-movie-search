@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import MovieRow from "./components/MovieRow";
 import "./App.css";
 
 class App extends Component {
@@ -27,21 +27,7 @@ class App extends Component {
 
     movies.forEach(movie => {
       console.log(movie.title);
-      const movieRow = (
-        <table key={movie.id}>
-          <tbody>
-            <tr>
-              <td>
-                <img alt="poster" width="120" src={movie.poster_src} />
-              </td>
-              <td>
-                {movie.title}
-                <p>{movie.overview}</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      );
+      const movieRow = <MovieRow movie={movie} />;
       movieRows.push(movieRow);
     });
 
