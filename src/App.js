@@ -34,7 +34,7 @@ class App extends Component {
     // });
 
     // this.state = { rows: movieRows };
-    this.performSearch();
+    this.performSearch("woman");
   }
 
   performSearch(searchTerm) {

@@ -5,6 +5,15 @@
   padding-left: 16px;
 }
 
+.btn {
+  background: #ea2340;
+  color: #f5eee6;
+  border: none;
+  padding: 5px 9px;
+  border-radius: 50%;
+  float: right;
+}
+
 .App {
   text-align: center;
 }
